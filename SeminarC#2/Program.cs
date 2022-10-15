@@ -26,7 +26,7 @@ int biggerDigit = FindBiggerDigit(number);
 
 Console.WriteLine($"Bigger digit of {number} is {biggerDigit}"); */
 
-// Задача: написать программу, которая выводит случайное трехзначное число и удаляет вторую цифруэтого числа.
+/* Задача: написать программу, которая выводит случайное трехзначное число и удаляет вторую цифруэтого числа.
 
 int RemoveSecond(int num)
 {
@@ -38,4 +38,30 @@ int RemoveSecond(int num)
 
 int number = new Random().Next(100, 999);
 Console.WriteLine(number);
-Console.WriteLine(RemoveSecond(number));
+Console.WriteLine(RemoveSecond(number)); */
+
+// Задача: написать программу, которая принимает на вход число n и проверяет: кратно ли это число одновременно числам a и b, где a и b - целые численные делители
+
+bool Del(int num, int divisor1, int divisor2)
+{
+    if( num % divisor1 == 0 && num % divisor1 == 0)
+    {
+        return true;
+    }
+    return false;
+}
+
+Console.Write("Input your number: ");
+int number = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Input first divisor: ");
+int a = Convert.ToInt32(Console.ReadLine());
+
+Console.Write("Input second divisor: ");
+int b = Convert.ToInt32(Console.ReadLine());
+
+bool result = Del(number, a, b);
+Console.WriteLine($"Result: {result}");
+
+
+
